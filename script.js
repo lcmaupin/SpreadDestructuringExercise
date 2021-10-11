@@ -64,7 +64,12 @@ const bonus = {
   };
 
 // 5a
-const all = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const all = [...bonus.first, ...bonus.second, ...bonus.third];
 console.log(all);
 
 // 5b
+const {first, second, third} = bonus;
+const [one, two, three] = first;
+const [four, five, six] = second;
+const [seven, eight, nine] = third;
+console.log(one, two, three, four, five, six, seven, eight, nine);
